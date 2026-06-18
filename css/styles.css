@@ -235,11 +235,35 @@ h4 {
 }
 
 .hero-actions {
-    display: flex;
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
     gap: 14px;
     margin-top: 24px;
+    padding: 12px;
+    border-radius: 999px;
+    background: rgba(18, 40, 40, 0.18);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.16);
+    backdrop-filter: blur(10px);
+    width: fit-content;
+    max-width: 100%;
     flex-wrap: wrap;
+}
+
+.hero-actions .button {
+    min-width: 160px;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.14);
+}
+
+.hero-actions .button-outline {
+    background: rgba(255, 255, 255, 0.14);
+    color: var(--color-white);
+    border-color: rgba(255, 255, 255, 0.58);
+}
+
+.hero-actions .button-outline:hover {
+    background: rgba(255, 255, 255, 0.22);
+    border-color: rgba(255, 255, 255, 0.85);
 }
 
 .section {

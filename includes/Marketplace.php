@@ -112,6 +112,35 @@ final class Auth
     {
         return isset($_SESSION['user_id']) && (int) $_SESSION['user_id'] > 0;
     }
+
+    private static function ensureAdminShopperUser(array $admin): array
+    {
+        $adminEmail = (string) ($admin['email'] ?? '');
+        $shopper = $adminEmail !== '' ? db_one('SELECT * FROM tblUser WHERE email = ? LIMIT 1', 's', [$adminEmail]) : null;
+
+        if ($shopper) {
+            return $shopper;
+        }
+
+        $fullName = trim((string) ($admin['full_name'] ?? 'Administrator'));
+        $nameParts = preg_split('/\s+/', $fullName, 2);
+        $firstName = $nameParts[0] ?? 'Administrator';
+        $lastName = $nameParts[1] ?? ($nameParts[0] ?? '');
+        $username = trim((string) ($admin['username'] ?? 'admin'));
+        if ($username === '') {
+            $username = 'admin_' . (int) ($admin['admin_id'] ?? 0);
+        }
+
+        $passwordHash = (string) ($admin['password_hash'] ?? '');
+        execute_sql(
+            'INSERT INTO tblUser (full_name, first_name, last_name, username, email, password_hash, phone_number, role, customer_status, seller_status, is_active)
+             VALUES (?, ?, ?, ?, ?, ?, NULL, "admin", "verified", "none", 1)',
+            'ssssss',
+            [$fullName, $firstName, $lastName, $username, $adminEmail, $passwordHash]
+        );
+
+        return db_one('SELECT * FROM tblUser WHERE email = ? LIMIT 1', 's', [$adminEmail]) ?? [];
+    }
 }
 
 final class Cart
@@ -506,32 +535,4 @@ final class Cart
         return strtoupper(substr(bin2hex($randomBytes), 0, 9));
     }
 
-    private static function ensureAdminShopperUser(array $admin): array
-    {
-        $adminEmail = (string) ($admin['email'] ?? '');
-        $shopper = $adminEmail !== '' ? db_one('SELECT * FROM tblUser WHERE email = ? LIMIT 1', 's', [$adminEmail]) : null;
-
-        if ($shopper) {
-            return $shopper;
-        }
-
-        $fullName = trim((string) ($admin['full_name'] ?? 'Administrator'));
-        $nameParts = preg_split('/\s+/', $fullName, 2);
-        $firstName = $nameParts[0] ?? 'Administrator';
-        $lastName = $nameParts[1] ?? ($nameParts[0] ?? '');
-        $username = trim((string) ($admin['username'] ?? 'admin'));
-        if ($username === '') {
-            $username = 'admin_' . (int) ($admin['admin_id'] ?? 0);
-        }
-
-        $passwordHash = (string) ($admin['password_hash'] ?? '');
-        execute_sql(
-            'INSERT INTO tblUser (full_name, first_name, last_name, username, email, password_hash, phone_number, role, customer_status, seller_status, is_active)
-             VALUES (?, ?, ?, ?, ?, ?, NULL, "admin", "verified", "none", 1)',
-            'ssssss',
-            [$fullName, $firstName, $lastName, $username, $adminEmail, $passwordHash]
-        );
-
-        return db_one('SELECT * FROM tblUser WHERE email = ? LIMIT 1', 's', [$adminEmail]) ?? [];
-    }
 }

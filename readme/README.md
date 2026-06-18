@@ -36,7 +36,7 @@ Pastimes is a South African pre-loved fashion marketplace for buying and selling
 
 ## ▶ Demo
 1. Youtube demo video
-- **Demo video**:
+- **Demo video**: https://youtu.be/zcIa88a4sdI
 2. **Video will also be in Releases  with source code**
 
 ## 📌 Important Notes

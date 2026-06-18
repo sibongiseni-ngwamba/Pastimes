@@ -61,7 +61,7 @@ The application follows a **managed marketplace model** where administrators ver
 
 ## ▶ Demo
 1. Youtube demo video
-- **Demo video**: https://youtu.be/zcIa88a4sdI
+- **Demo video**: https://youtu.be/zcIa88a4sdI **Removed**
 2. **Video will also be in Releases  with source code**
 
 ---

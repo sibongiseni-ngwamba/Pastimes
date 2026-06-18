@@ -1,0 +1,6 @@
+# user_id|id_number|motivation|status
+2|9801015800081|I want to sell premium pre-loved items from my wardrobe.|pending
+4|9605054800082|I already run social media thrift drops and want a safer platform.|pending
+1|9501015800083|I have quality branded clothes ready for listing.|approved
+5|9303035800084|I want to declutter and sell authenticated items.|rejected
+3|9204045800085|Existing verified seller renewal sample.|approved

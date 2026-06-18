@@ -1,0 +1,6 @@
+# duplicate of userData for full-database loading
+John Doe|John|Doe|jdoe|j.doe@abc.co.za|25d55ad283aa400af464c76d713c07ad|0823456789|customer|verified|none|1
+Ayanda Mokoena|Ayanda|Mokoena|ayanda|ayanda@pastimes.co.za|25d55ad283aa400af464c76d713c07ad|0811234567|customer|pending|none|1
+Lebo Khumalo|Lebo|Khumalo|lebo.k|lebo@pastimes.co.za|25d55ad283aa400af464c76d713c07ad|0831112222|seller|verified|approved|1
+Naledi Smith|Naledi|Smith|naledi|naledi@pastimes.co.za|25d55ad283aa400af464c76d713c07ad|0849876543|customer|verified|pending|1
+Chris Naidoo|Chris|Naidoo|cnaidoo|chris@pastimes.co.za|25d55ad283aa400af464c76d713c07ad|0725678901|customer|rejected|none|1

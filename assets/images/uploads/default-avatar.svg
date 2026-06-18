@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title>Default profile avatar</title>
+  <desc>Minimal circular avatar with a face silhouette.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a3a3a"/>
+      <stop offset="100%" stop-color="#2f5b5a"/>
+    </linearGradient>
+  </defs>
+  <circle cx="120" cy="120" r="120" fill="url(#bg)"/>
+  <circle cx="120" cy="92" r="42" fill="#fdfbf7"/>
+  <path d="M52 208c12-38 45-64 68-64s56 26 68 64" fill="#fdfbf7"/>
+  <circle cx="104" cy="90" r="5" fill="#1a3a3a"/>
+  <circle cx="136" cy="90" r="5" fill="#1a3a3a"/>
+  <path d="M97 110c8 9 38 9 46 0" fill="none" stroke="#1a3a3a" stroke-width="7" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,6 @@
+# user_id|address_id|order_total|status
+1|1|450.00|pending
+2|2|1060.00|dispatched
+4|4|320.00|delivered
+1|1|690.00|cancelled
+3|3|750.00|pending

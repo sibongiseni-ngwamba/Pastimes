@@ -1,0 +1,8 @@
+# seller_id|title|brand|category|gender|size_label|condition_rating|sell_price|description|image_path|status
+3|Floral Summer Dress|Zara|Dresses|Women|M|4|450.00|Bright floral dress in excellent condition.|assets/images/products/floral-dress.jpg|approved
+3|Vintage Denim Jacket|Levi's|Outerwear|Women|L|5|750.00|Classic oversized denim jacket with minimal wear.|assets/images/products/denim-jacket.jpg|approved
+3|Silk Blouse|H&M|Tops|Women|S|3|280.00|Lightweight silk-blend blouse for work or weekends.|assets/images/products/silk-blouse.jpg|approved
+3|Men's Oxford Shirt|Country Road|Tops|Men|M|4|320.00|Smart casual oxford shirt with button-down collar.|assets/images/products/fallback-product.jpg|approved
+3|Chelsea Boots|Aldo|Shoes|Unisex|8|4|690.00|Well-kept faux leather boots with sturdy soles.|assets/images/products/running-shoes.jpg|approved
+3|Tailored Wool Coat|Mango|Outerwear|Women|M|5|1200.00|Warm tailored coat with a polished pre-loved finish.|assets/images/products/wool-coat.jpg|approved
+3|Structured Leather Bag|Topshop|Accessories|Women|One Size|4|540.00|Compact leather-look bag with clean hardware and everyday space.|assets/images/products/leather-bag.jpg|approved

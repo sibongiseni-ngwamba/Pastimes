@@ -1,0 +1,6 @@
+# sender_user_id|sender_admin_id|receiver_user_id|title|message_body|is_broadcast|is_read
+1|1|3|Dress enquiry|Hi, is the floral dress still available for immediate shipping?|0|1
+3|1|1|Re: Dress enquiry|Yes, the dress is available and ready to ship this week.|0|0
+1|1|1|Verification update|Your customer profile has been verified by the admin team.|1|0
+1|1|2|Registration pending|Your account is pending customer verification by an administrator.|1|0
+4|1|3|Sizing question|Could you confirm whether the oxford shirt fits true to size?|0|0

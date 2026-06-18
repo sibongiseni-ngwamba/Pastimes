@@ -1,0 +1,6 @@
+# full_name|username|email|password_hash
+Admin One|admin@pastimes.co.za|admin@pastimes.co.za|25d55ad283aa400af464c76d713c07ad
+Lerato Admin|lerato.admin@pastimes.co.za|lerato.admin@pastimes.co.za|25d55ad283aa400af464c76d713c07ad
+Sizwe Control|sizwe.control@pastimes.co.za|sizwe.control@pastimes.co.za|25d55ad283aa400af464c76d713c07ad
+Mia Support|mia.support@pastimes.co.za|mia.support@pastimes.co.za|25d55ad283aa400af464c76d713c07ad
+Kopano Lead|kopano.lead@pastimes.co.za|kopano.lead@pastimes.co.za|25d55ad283aa400af464c76d713c07ad

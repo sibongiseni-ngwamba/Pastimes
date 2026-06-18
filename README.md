@@ -59,6 +59,13 @@ The application follows a **managed marketplace model** where administrators ver
 
 ---
 
+## ▶ Demo
+1. Youtube demo video
+- **Demo video**:
+2. **Video will also be in Releases  with source code**
+
+---
+
 ## 📁 Project Structure
 
 ```text
